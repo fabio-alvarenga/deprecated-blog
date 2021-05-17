@@ -55,4 +55,20 @@ Portanto, esse artefato de software - a classe - foi estendida com sucesso atrav
 
 ## L = Liskov-Substitution Principle
 
+Eu sei. A impressão é que esses nomes continuam ficando maiores e mais complicados. Isso porque você ainda não viu a descrição formal em que esse princípio foi inspirado.
+
+> “Se _q(x)_ é uma propriedade demonstrável dos objetos _x_ de _tipo T_. Então _q(y)_ deve ser verdadeiro para objetos _y_ de _tipo S_ onde _S_ é um _subtipo de T_.”
+
+Prontinho. Vamos para o próximo princípio.
+
+Brincadeiras à parte, você não precisa de um diploma em matemática para entender isso. O equivalente no jargão de programador, parafraseando o livro do Robert é o seguinte:
+
+> "Construa sistemas de software com partes substituíveis em mente. Estas devem aderir a um contrato que permite a substituição entre seus subtipos de forma fluida."
+
+_Como água, meu amigo._ Agora substitua a palavra "contratos" por "interfaces" e você já consegue ter um vislumbre da implementação em linguagens como Java, TypeScript e outras que seguem - ou permitem - o paradigma orientado a objetos.
+
+Dependendo de interfaces, é possível reduzir o acoplamento entre partes do código, facilitando a adição de futuros incrementos e também sua manutenção. Em breve veremos que esse princípio tem uma forte relação de interdependência com a letra 'D' de SOLID.
+
+## I = Interface Segregation Principle
+
 [...typing]
