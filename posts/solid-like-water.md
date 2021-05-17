@@ -13,7 +13,7 @@ A maior parte dos desenvolvedores é capaz de lidar com projetos pequenos sem se
 
 Mas quando a escala do projeto aumenta e existe a perspectiva de que este terá de ser mantido num período de meses ou até anos, sofrendo aprimoramentos e manutenções constantes, **pensar em _design patterns_ se torna inegociável.**
 
-Antes de se erguer um edifício, não se pensa em começar a trabalhar na alvenaria antes das fundações "para tentar ganhar tempo". Da mesma forma pode ser visto um projeto de software que começa sem planejamento: uma hora ou outra vai ter que derrubar uma parede e começar de novo - a falta de planejamento começa a refletir em retrabalho. E a não ser que você seja adepto da metodologia [Go Horse](https://gohorseprocess.com.br/extreme-go-horse-xgh/), é hora de repensar a forma como se constrói software.
+Ao erguer um edifício, não se pensa em começar a trabalhar na alvenaria antes das fundações "para tentar ganhar tempo". Da mesma forma pode ser visto um projeto de software que começa sem planejamento: uma hora ou outra vai ter que derrubar uma parede e começar de novo - a falta de planejamento começa a refletir em retrabalho. E a não ser que você seja adepto da metodologia [Go Horse](https://gohorseprocess.com.br/extreme-go-horse-xgh/), é hora de repensar a forma como se constrói software.
 
 # SOLID
 
@@ -47,4 +47,8 @@ E o Princípo da Responsabilidade Única foca exatamente nisso: a classe tem ape
 
 > "Um artefato de software deve estar aberto para extensão mas fechado para modificação."
 
-[...typing]
+"Aberto-fechado", dois estados mutualmente exclusivos ao mesmo tempo, huh...? Calma. Esse princípio não é nenhuma [sobreposição quântica](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat). Na verdade é bem mais simples do que parece.
+
+Em outras palavras, ele afirma que seu código deve ser escrito de tal forma que ao adicionar, por ex., um novo método a uma classe, este não deve interferir em nada nos métodos que existiam anteriormente.
+
+Portanto, esse artefato de software - a classe - foi estendida com sucesso através do método adicionado, mas isso não interferiu em nada no restante do código que já estava ali escrito, que por sua vez permaneceu "fechado para modificações" neste contexto. Sem refatorações, sem retrabalho para adicionar novas funcionalidades.
