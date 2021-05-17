@@ -71,4 +71,31 @@ Dependendo de interfaces, é possível reduzir o acoplamento entre partes do có
 
 ## I = Interface Segregation Principle
 
-[...typing]
+> "Previna que classes dependam de coisas que não precisam."
+
+Esse princípio recomenda que durante a criação de classes, um cuidado especial seja tomado durante a escolha de qual interface será implementada ou qual classe será herdada.
+
+Isso porque muitas vezes pode parecer tentador estender uma classe utilizando uma herança _quase_ que totalmente compatível com a classe filha. No entanto, podem haver um ou mais métodos ali expostos que jamais serão utilizados pela classe que recebe a herança. Esse é uma falha que começa de maneira bem sutil, mas pode se espalhar por todo um projeto silenciosamente, sendo difícil de reverter.
+
+Em resumo: crie classes minimalistas, que possuem apenas os métodos que de fato usam. Elimine tudo que é supérfluo, ainda que seja necessário criar novas interfaces para fazê-lo.
+
+## D = Dependency Inversion Principle
+
+> "1. Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. </br></br>2. Abstrações não devem depender de detalhes de implementação. São os detalhes de implementação que devem depender de abstrações."
+
+Esta é a última letra da sigla mnemônica SOLID. E como mencionado acima, muitas dessas letras acabam conversando entre si, incentivando práticas que naturalmente levam uma a outra.
+
+No Princípio da Inversão de Dependência não é diferente. Martin orienta que para reduzir o acoplamento entre diferentes módulos de um sistema, é preciso abstrair suas implementações, que estão em constante mudança, e fazer com que interfaces - muito mais estáveis - estabeleçam contratos entre diferentes classes.
+
+Dessa maneira, por exemplo, ao implementar uma API responsável pelo envio de e-mails, muito mais seguro do que "marretá-la" com o restante do código já existente, é fazer com que ele estabeleça um contrato com uma abstração que implementa o método `enviarEmail`.
+Assim, o restante do código não estará dependendo da implementação dessa API, mas sim de sua abstração.
+
+Uma técnica muito utilizada para praticar esse princípio é a [injeção de dependência](https://en.wikipedia.org/wiki/Dependency_injection). DIP também é muito relacionado com outro termo sinônimo: a [Inversão de Controle](https://en.wikipedia.org/wiki/Inversion_of_control).
+
+## Conclusão
+
+Essa foi uma visão geral dos cinco fundamentos por trás de SOLID. Em breve esse post será atualizado com aplicações dessas práticas em código. Qualquer dúvida, correção ou sugestão - enquanto não temos uma seção de comentários - abra uma issue no [repositório que abriga esse blog](https://github.com/fabio-alvarenga/deprecated-blog) e eu te respondo por lá!
+
+Até logo mais!
+
+[@fabio-alvarenga](https://github.com/fabio-alvarenga/)
