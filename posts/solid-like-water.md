@@ -52,3 +52,7 @@ E o Princípo da Responsabilidade Única foca exatamente nisso: a classe tem ape
 Em outras palavras, ele afirma que seu código deve ser escrito de tal forma que ao adicionar, por ex., um novo método a uma classe, este não deve interferir em nada nos métodos que existiam anteriormente.
 
 Portanto, esse artefato de software - a classe - foi estendida com sucesso através do método adicionado, mas isso não interferiu em nada no restante do código que já estava ali escrito, que por sua vez permaneceu "fechado para modificações" neste contexto. Sem refatorações, sem retrabalho para adicionar novas funcionalidades.
+
+## L = Liskov-Substitution Principle
+
+[...typing]
