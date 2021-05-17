@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Link from 'next/link';
@@ -16,24 +15,17 @@ export default function Home({
   }[];
 }): JSX.Element {
   return (
-    <Layout home={true}>
+    <Layout home={false}>
       <>
-        <Image
-          priority
-          src="/images/profile.jpg"
-          height={144}
-          width={144}
-          alt={'profile picture'}
-        />
         <Head>
           <title>Deprecated Blog</title>
         </Head>
-        <div className="container">
-          <p>This blog is deprecated.</p>
-        </div>
-
+        <h1>Deprecated Blog</h1>
+        Where all software come to die.
+        <br />A blog by{' '}
+        <a href="https://github.com/fabio-alvarenga">@fabio-alvarenga</a>
         <section>
-          <h2>Latest blogs</h2>
+          <h4>Latest blogs</h4>
           <ul>
             {allPostsData.map(({ id, date, title }) => (
               <li key={id}>

@@ -46,3 +46,5 @@ E o Princípo da Responsabilidade Única foca exatamente nisso: a classe tem ape
 ## O = Open-Closed Principle
 
 > "Um artefato de software deve estar aberto para extensão mas fechado para modificação."
+
+[...typing]
