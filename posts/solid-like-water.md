@@ -5,7 +5,7 @@ date: '2021-05-16'
 
 ![Water](/images/water.jpg)
 
-> _"Esvazie sua mente. Torne-se isento de formato — como a água._</br> _Água: pode fluir ou chocar-se violentamente._</br> _Seja como a água, meu amigo."_
+> _"Esvazie sua mente. Torne-se amorfo — como a água._</br> _Água: pode fluir ou chocar-se violentamente._</br> _Seja como a água, meu amigo."_
 >
 > **Bruce Lee**
 
