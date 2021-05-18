@@ -21,7 +21,7 @@ export default function Home({
           <title>Deprecated Blog</title>
         </Head>
         <h1>Deprecated Blog</h1>
-        Where tech goes to die.
+        Programmed obsolescence.
         <br />A blog by{' '}
         <a href="https://github.com/fabio-alvarenga">@fabio-alvarenga</a>
         <section>
